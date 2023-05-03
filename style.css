@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:rgb(122, 238, 238);
+}
+
+
+.container{
+ width: 410px;
+ margin: 50px auto;
+ padding: 10px;
+
+}
+
+
+.inputs {
+    padding: 2rem 0 2rem 0;
+    text-align: center;
+    justify-content: center;
+    background: white;
+
+}
+
+.inputs input[type="text"] {
+    height: 3.5rem;
+    width: 20rem;
+    background:rgb(24, 24, 24);
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border: 2px solid grey;
+    border-radius: 2px;
+    margin-right:4px ;
+
+}
+.inputs input[type="submit"] {
+    height: 3.2rem;
+    width: 6.5rem;
+    background: rgb(72, 72, 179);
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    border: none;
+    border-radius: 2px;
+}
+
+
+.display {
+    text-align: center;
+    width: 400px;
+    color:rgb(57, 151, 57);
+}
+.box {
+    margin: 0 9rem;
+
+    background-color: white;
+    height: 45vh;
+    margin: 50px auto;
+    border-radius: 2px;
+}
+
+.box h2{
+    padding: 5px 0;
+    text-align: center;
+    background: rgb(72, 72, 179);
+    color: white;
+    font-family: sans-serif;
+  }
+  .box p{
+    margin:20px 50px;
+    margin-right: 20px;
+    text-align: left;
+    color: blue ;
+    font-size:23px;
+  }
+
+  .box h2 span{
+    font-size: 26px;
+    color: rgb(122, 238, 238);
+  }
+    .box p span{
+    color:rgb(215, 56, 83);
+    font-size: 25px;
+  }
+  h1{
+    text-align: center;
+    color: red;
+    font-size: 100px;
+    margin-bottom: 20px;
+  }
