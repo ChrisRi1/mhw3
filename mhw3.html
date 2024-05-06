@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="wieport" content="width-device-width,initial-scale=1.0">
+   <title>twitter</title>
+   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+   <link rel="stylesheet" href="mhw3.css"/>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+   <script src="mhw3.js" defer></script>
+  </head>
+   <body>
+   <!-- sidebar-->
+    <div class="sidebar">
+     <!--- <i class="fab fa-twitter"></i> -->
+      <div class="sidebarOption active">
+        <span class="material-symbols-outlined">
+          home
+          </span>
+          <h2>Home</h2>
+      </div>
+
+      <div class="sidebarOption ">
+        <span class="material-symbols-outlined">
+          search
+          </span>
+          <h2>Explore</h2>
+      </div>
+
+      <div class="sidebarOption ">
+        <span class="material-symbols-outlined">
+          notifications
+          </span>
+          <h2>Notifications</h2>
+      </div>
+
+      <div class="sidebarOption ">
+        <span class="material-symbols-outlined">
+          mail
+          </span>
+          <h2>Messages</h2>
+        </div>
+
+        <div class="sidebarOption ">
+          <span class="material-symbols-outlined">
+            list_alt
+            </span>
+            <h2>Lists</h2>
+          </div>
+
+          <div class="sidebarOption">
+            <span class="material-symbols-outlined">
+              groups_2
+              </span>
+              <h2>Communities</h2>
+            </div>
+
+            <div class="sidebarOption ">
+              <span class="material-symbols-outlined">
+                person
+                </span>
+                <h2>Profile</h2>
+              </div>
+              
+              <div class="sidebarOption " id="moreOption">
+                <span class="material-symbols-outlined">
+                  pending
+                  </span>
+                  <h2>More</h2>
+                </div>
+                <!-- hidden-->
+                <div class="dropdown" id="dropdownMenu">
+                  <a href="#">Op 1</a>
+                  <a href="#">Op 2</a>
+                  <a href="#">Op 3</a>
+              </div>
+                <button class="sidebar_tweet">post</button>
+</div>
+<!-- ends of sudebar-->
+<!-- feed starts-->
+<div class="feed">
+  <div class="feed_header">
+    <h2>For you</h2>
+  </div>
+
+  <!--tweet box starts-->
+  <div class="tweetBox">
+    <form>
+      <div class="tweetBox_input">
+      <img src="img/avatar_profile.png"/>
+     <input type="text" placeholder="what's happening?"/>
+    </div>
+    <button class="tweetBox_tweetButton">Tweet</button>
+    </form>
+  </div> 
+   <!--tweet box ends-->
+
+   <!--post starts-->
+   <div class="post"> 
+      <div class="post_avatar">
+    <img src="img\avatar_profile.png" />
+   </div>
+   <div class="post_body">
+     <div class="post_header">
+        <div class="post_headerText">
+           <h3>Christian Rizzo
+            <span class="post_headerSpecial">
+              <span class="material-symbols-outlined post_badge">
+                verified
+                </span>
+                @ChrisRi
+                </span>
+            </h3>
+            </div>
+            <div class="post_headerDescri">
+              <p>
+                I'm tired!
+              </p>
+            </div>
+     </div>
+     <img src="img/cane_che_dorme.png" />
+    
+     <div class="post_footer">
+      <span class="material-symbols-outlined">mode_comment</span>
+      <span class="material-symbols-outlined">repeat</span>
+      <span class="material-symbols-outlined">favorite</span>
+
+     </div>
+
+   </div>
+   </div>
+<!--post ends-->
+<!--post starts-->
+   <div class="post"> 
+    <div class="post_avatar">
+  <img src="img\avatar_profile.png" />
+ </div>
+ <div class="post_body">
+   <div class="post_header">
+      <div class="post_headerText">
+         <h3>Christian Rizzo
+          <span class="post_headerSpecial">
+            <span class="material-symbols-outlined post_badge">
+              verified
+              </span>
+              @ChrisRi
+              </span>
+          </h3>
+          </div>
+          <div class="post_headerDescri">
+            <p>
+              I'm tired!
+            </p>
+          </div>
+   </div>
+   <img src="img/cane_che_dorme.png" />
+  
+   <div class="post_footer">
+    <span class="material-symbols-outlined">mode_comment</span>
+    <span class="material-symbols-outlined">repeat</span>
+    <span class="material-symbols-outlined">favorite</span>
+
+   </div>
+
+ </div>
+ </div>
+ <!--post ends-->
+ </div>
+<!--feed ends-->
+<!-- widget -->
+<div class="widgets">
+  <!-- Widget per la ricerca delle persone -->
+  <div class="widgets_input">
+    <span class="material-symbols-outlined">
+      search
+      </span>
+     <input type="text" id="search-input" placeholder="Search People...">
+     <button id="search-button">Search</button>
+  </div>
+  <!-- Widget per il meteo -->
+  <div class="weather-widget">
+     <h2>Weather Forecast</h2>
+     <div class="city-search">
+        <input type="text" id="city-input" placeholder="Search City...">
+        <button id="city-search-button">Search</button>
+     </div>
+     <div class="weather-info">
+        
+     </div>
+  </div>
+</div>
+
+
+</body>
+</html>
