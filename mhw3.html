@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <META name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Just Eat</title>
+    <link rel="stylesheet" href="mhw3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="mhw3.js" defer></script>
+    <script src="ApiRest.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar-container">
+            <a href="#" class="logo">
+                <img src="logo2.svg">
+            </a>
+            <nav class="navbar">
+                <ul>
+                    <li> <a href="#">
+                            <span class="material-symbols-outlined">receipt_long</span>
+                            Ordine aziendale
+                        </a>
+                    </li>
+                    <li> <a href="#">
+                            <span class="material-symbols-outlined">
+                                scooter
+                            </span>
+                            Diventa rider
+                        </a>
+                    </li>
+                    <li> <a href="#">
+                            <span class="material-symbols-outlined">
+                                person
+                            </span>
+                            Accedi
+                        </a>
+                        <li class="language-dropdown">
+                            <span id="languageButton">
+                             <img src="italy.png" id="languageIcon">
+                            </span>
+                            <ul id="languageMenu" class="dropdown-content">
+                                <li data-lang="en" onclick="translatePage('en')">English</li>
+                                <li data-lang="it" onclick="translatePage('it')">Italiano</li>
+                                <li data-lang="fr" onclick="translatePage('fr')">Francais</li>
+                            </ul>
+                        </li>
+                    <li><span class="material-symbols-outlined" id="menu-icon">menu</span></li>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="modalOverlay" class="hidden">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h2>Il mio account</h2>
+                <span id="close-modal" class="close-modal">X</span>
+            </div>
+            <div class="modal-buttons">
+                <button class="btn modal-login">Accedi</button>
+                <button class="btn signup-btn">Crea un account</button>
+            </div>
+            <ul class="modal-list">
+                <li><span class="material-symbols-outlined">star</span>
+                    Premi 
+                </li>
+                <li><span class="material-symbols-outlined">
+                    redeem
+                    </span>
+                Carta fedeltà
+                </li>
+                <li><span class="material-symbols-outlined">
+                    contact_support
+                    </span>
+                Ti serve aiuto?
+            </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+
+    <section class="main-content">
+        <!--lato sinistro-->
+        <div class="left-side">
+            <div class="search-text">
+                <h2> Ordina cibo e tanto altro</h2>
+                <p>Ristoranti e spesa, a domicilio</p>
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Cosa vuoi ordinare?">
+                <button>Cerca</button>
+               <!--<span id="addressSpan" class="address-info"></span> -->
+            </div>
+        </div>
+        <!--lato destro-->
+        <div class="right-side">
+            <img src="margherita.png">
+        </div>
+    </section>
+    <section class="how-to-order">
+        <h2> Come ordinare</h2>
+        <h1> E' SEMPLICISSIMO</h1>
+    </section>
+    <div class="steps-container">
+        <div class="step">
+            <span class="material-symbols-outlined step-icon">location_on</span>
+
+            <h3>Indicaci la tua posizione</h3>
+
+            <p>TI mostreremo i negozi e i ristoranti della tua zona in cui puoi ordinare</p>
+        </div>
+        <div class="step">
+            <span class="material-symbols-outlined step-icon">
+                lunch_dining
+            </span>
+            <h3>Trova ciò che desideri</h3>
+            <p>Cerca articoli o piatti,locali o cucine</p>
+        </div>
+        <div class="step">
+            <span class="material-symbols-outlined step-icon">
+                room_service
+            </span>
+            <h3>ordina con consegna o ritiro al locale</h3>
+            <p>ti terremo aggiornato sullo stato del tuo Ordine</p>
+        </div>
+    </div>
+    <section class="info">
+        <p class="info-title">Just Eat</p>
+        <h2 class="info-subtitle">Di cosa hai voglia?</h2>
+        <div class="info-blocks">
+            <!-- Primo-->
+            <div class="info-block">
+                <span class="material-symbols-outlined block-icon">
+                    workspace_premium
+                </span>
+                <h3>Programmi fedeltà</h3>
+                <p>
+                    <span class="material-symbols-outlined check-icon">check_small</span>RIcevi i timbri,
+                    promozioni,sconti,novità e molto altro
+                </p>
+            </div>
+            <!--Secondo-->
+            <div class="info-block">
+                <span class="material-symbols-outlined block-icon">
+                    assignment_turned_in
+                </span>
+                <h3>La nostra promessa</h3>
+                <p>
+                    <span class="material-symbols-outlined check-icon">check_small</span>Servizio eccellente,<br>
+                    <span class="material-symbols-outlined check-icon">check_small</span>Recensioni autentiche.
+                </p>
+            </div>
+            <!--Terzo-->
+            <div class="info-block">
+                <span class="material-symbols-outlined block-icon">
+                    new_releases
+                </span>
+                <h3>I tuoi vantaggi</h3>
+                <p>
+                    <span class="material-symbols-outlined check-icon">check_small</span> oltre 28.000 locali tra cui
+                    scegliere,<br>
+                    <span class="material-symbols-outlined check-icon">check_small</span> Paga online o in contanti,<br>
+                    <span class="material-symbols-outlined check-icon">check_small</span>Ordina ovunque, in qualsiasi
+                    momento e con qualsiasi dispositivo.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Scopri Just Eat</h3>
+                <ul>
+                    <li><a href="#">Chi siamo</a></li>
+                    <li><a href="#">Lavora con noi</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Servizio clienti</h3>
+                <ul>
+                    <li><a href="#">Aiuto</a></li>
+                    <li><a href="#">Contatti</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Seguici</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>2025 Just Eat. TUtti i diritti riservati</p>
+        </div>
+    </footer>
+</body>
+
+</html>
